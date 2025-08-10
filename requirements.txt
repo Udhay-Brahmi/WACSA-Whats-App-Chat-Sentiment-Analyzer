@@ -1,0 +1,66 @@
+# WhatsApp Chat Sentiment Analyzer - Requirements
+# Compatible with Python 3.7+
+
+# ===== CORE DEPENDENCIES =====
+# Web Interface Framework
+gradio>=4.0.0,<5.0.0
+
+# Data Processing & Analysis
+pandas>=1.3.0,<3.0.0
+numpy>=1.21.0,<2.0.0
+
+# Natural Language Processing
+nltk>=3.7,<4.0.0
+
+# Data Visualization
+matplotlib>=3.5.0,<4.0.0
+seaborn>=0.11.0,<1.0.0
+
+# ===== PERFORMANCE OPTIMIZATIONS =====
+# Faster numerical operations
+scipy>=1.7.0,<2.0.0
+
+# Memory efficiency for large datasets
+pyarrow>=10.0.0,<15.0.0
+
+# ===== UTILITY LIBRARIES =====
+# Enhanced data structures and caching
+functools32>=3.2.3;python_version<"3.2"
+
+# Date/time processing improvements
+python-dateutil>=2.8.0,<3.0.0
+
+# Text processing utilities
+regex>=2022.1.18
+
+# ===== DEVELOPMENT & DEPLOYMENT =====
+# WSGI server for production deployment
+gunicorn>=20.1.0,<22.0.0;platform_system!="Windows"
+
+# Windows alternative for gunicorn
+waitress>=2.1.0;platform_system=="Windows"
+
+# ===== OPTIONAL PERFORMANCE BOOSTERS =====
+# Uncomment these for additional performance (larger install size)
+# plotly>=5.0.0,<6.0.0              # Interactive plots alternative
+# scikit-learn>=1.1.0,<2.0.0        # Additional ML capabilities
+# wordcloud>=1.9.0,<2.0.0           # Word cloud generation
+# textblob>=0.17.0,<1.0.0           # Alternative sentiment analysis
+
+# ===== VERSION COMPATIBILITY NOTES =====
+# - Gradio 4.x: Latest stable with improved performance
+# - NLTK: Includes VADER sentiment analyzer  
+# - Matplotlib/Seaborn: Core visualization libraries
+# - Pandas: Essential for data manipulation
+# - NumPy: Numerical computing foundation
+
+# ===== INSTALLATION NOTES =====
+# Standard installation:
+# pip install -r requirements.txt
+#
+# Development installation with optional features:
+# pip install -r requirements.txt plotly scikit-learn wordcloud textblob
+#
+# For Conda users:
+# conda install --file requirements.txt
+# (Note: Some packages might need pip installation)
